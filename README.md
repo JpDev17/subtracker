@@ -44,7 +44,6 @@ src/main/java/com/subtracker
 ├── domain/           
 ├── repository/       
 ├── service/
-│   └── SubscriptionService.java   
 ├── controller/       
 └── dto/              
 ```
