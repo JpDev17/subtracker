@@ -49,10 +49,6 @@ src/main/java/com/subtracker
 └── dto/              
 ```
 
-## 📊 Diferencial Técnico
-
-Mesmo sendo um CRUD, o projeto já nasce com propósito: as agregações de gasto (mensal, anual, por categoria) exigem pensar em queries eficientes e não apenas em "salvar e listar". É a base limpa sobre a qual os próximos projetos do roadmap constroem.
-
 ## ▶️ Como Rodar Localmente
 
 ```bash
