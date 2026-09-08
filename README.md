@@ -29,8 +29,8 @@ Uma API que permite cadastrar assinaturas com valor e ciclo de cobrança, calcul
 
 | Camada | Tecnologia |
 |---|---|
-| Linguagem | Java 21 |
-| Framework | Spring Boot 3.x |
+| Linguagem | Java 25 |
+| Framework | Spring Boot 4.x |
 | Persistência | Spring Data JPA + PostgreSQL |
 | Migrations | Flyway |
 | Testes | JUnit 5, Mockito |
@@ -41,12 +41,12 @@ Uma API que permite cadastrar assinaturas com valor e ciclo de cobrança, calcul
 
 ```
 src/main/java/com/subtracker
-├── domain/           # Entidade Subscription, enum BillingCycle
-├── repository/       # SubscriptionRepository (Spring Data JPA)
+├── domain/           
+├── repository/       
 ├── service/
-│   └── SubscriptionService.java   # Regras de cálculo de gasto e vencimento
-├── controller/       # REST controllers
-└── dto/              # Records de entrada/saída
+│   └── SubscriptionService.java   
+├── controller/       
+└── dto/              
 ```
 
 ## 📊 Diferencial Técnico
@@ -67,10 +67,6 @@ docker run --name subtracker-db -e POSTGRES_PASSWORD=postgres \
 ```
 
 API disponível em `http://localhost:8080`, documentação em `http://localhost:8080/swagger-ui.html`.
-
-## 🗺️ Próximo Passo no Roadmap
-
-Este é o Projeto 1 de uma série de 5 projetos com complexidade crescente. O próximo passo é o **GastoCerto**, que introduz regras de negócio mais ricas (limites de orçamento, alertas, paginação e filtros avançados).
 
 ## 📄 Licença
 
